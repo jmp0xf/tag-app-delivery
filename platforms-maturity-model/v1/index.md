@@ -1,34 +1,3 @@
----
-title: "Platform Engineering Maturity Model"
-pdf: https://github.com/cncf/tag-app-delivery/raw/main/platforms-maturity-model/v1/assets/platform-eng-maturity-model-v1.0.pdf
-version_info: https://github.com/cncf/tag-app-delivery/tree/main/platforms-maturity-model/README.md
-description: "This maturity model intends to provide tactical guidance to users seeking to adopt the patterns discussed in the Platforms Definition White Paper. That paper suggests why and what to build; this document will begin to describe how to plan to build it. The target audience is CTOs, Directors of engineering, lead engineers, and architects seeking to evaluate their current state and environment and identify opportunities for improvement.<br/><br/>
-This document refers to, enhances, and follows similar standards as the following related documents:<br/>
-[Cloud Maturity Model](https://maturitymodel.cncf.io/)<br/>
-[Platforms Definition White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/)"
-type: whitepapers
-url: /whitepapers/platform-eng-maturity-model
----
-
-
-<script>
-window.onhashchange = function() {
-  // get the fragment without the `#`
-  const fragment = window.location.hash.substring(1)
-  const found = Array.from(document.querySelectorAll('.nav-item'))
-    .filter(el => el.textContent === fragment)
-  if (!found) {
-    return
-  }
-
-  if (found.length > 1) {
-    console.warn(`Found multiple ` + "`.nav-item`s" + ` with the text ${parts[1]}, only opening the first one`)
-  }
-
-  found[0].click();
-}
-</script>
-
 ## Introduction
 
 CNCF's initial [Platforms Definition white paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/) describes what internal platforms for cloud computing are and the values they promise to deliver to enterprises. But to achieve those values an organization must reflect and deliberately pursue outcomes and practices that are impactful for them, keeping in mind that every organization relies on an internal platform crafted for its own organization - even if that platform is just documentation on how to use third party services. This maturity model provides a framework for that reflection and for identifying opportunities for improvement in any organization.
